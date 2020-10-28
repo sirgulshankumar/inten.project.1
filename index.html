@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>365</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style media="screen">
+      .mySlides {display:none;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="logo">
+            <div class="box">
+              <h1>365</h1>
+            </div>
+          </div>
+
+          <div class="menu">
+            <a href="#">Movies</a>
+            <a href="#">TV Series</a>
+            <a href="#">Audio</a>
+          </div>
+      </nav>
+
+
+      <div class="content display-container">
+        <img class="mySlides" src="img/img1.jpg" style="width:100%">
+        <img class="mySlides" src="img/img2.jpg" style="width:100%">
+        <img class="mySlides" src="img/img3.jpg" style="width:100%">
+        <img class="mySlides" src="img/img4.jpg" style="width:100%">
+
+        <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+
+      <div class="topnav">
+  <a class="active" href="#home">Genre</a>
+  <input type="text" placeholder="Search your favourite movie title">
+</div>
+
+
+       <div class="second">
+         <h1>Popular in Action</h1>
+      </div>
+
+      <div class="movie">
+        <div class="container">
+          <a href="#"><img src="img/movie1.jpg" alt="" /></a>
+           <div class="bottom-a">Foster</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie2.jpg" alt="" /></a>
+           <div class="bottom-a">Spider-Man 2</div>
+           <div class="bottom-b">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie3.jpg" alt="" /></a>
+           <div class="bottom-a">Spider-Man 3</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie4.jpg" alt="" /></a>
+           <div class="bottom-a">Foster</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie5.jpg" alt="" /></a>
+           <div class="bottom-a">Foster</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie6.jpg" alt="" /></a>
+           <div class="bottom-a">Foster</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie7.jpg" alt="" /></a>
+           <div class="bottom-a">Foster</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+        <div class="container">
+          <a href="#"><img src="img/movie8.jpg" alt="" /></a>
+           <div class="bottom-a">Foster</div>
+           <div class="bottom-ba">Action</div>
+        </div>
+
+      </div>
+   </header>
+  <footer>
+    <div class="logo">
+      <div class="box">
+        <h1>365</h1>
+      </div>
+    </div>
+
+    <div class="menu">
+      <p>Powerd by 365 Entertainment Portal 2019. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+  </body>
+</html>
